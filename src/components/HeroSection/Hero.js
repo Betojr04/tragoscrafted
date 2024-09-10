@@ -1,28 +1,17 @@
+// Hero.js
 import React from "react";
-import { useAppContext } from "../../store/AppContext";
-import "./Hero.css";
+import "./Hero.css"; // Custom CSS for hero
 
 export const Hero = () => {
-  const { state, setMessage } = useAppContext();
-
-  const handleToggleMessage = () => {
-    const newMessage =
-      state.message === "Hello, World!"
-        ? "Welcome to My Company!"
-        : state.message === "Welcome to My Company!"
-        ? "This means the store is working correctly."
-        : "Hello, World!";
-    setMessage(newMessage);
-  };
-
   return (
-    <section className="hero-container">
-      <div>
-        <h1>
-          {state.message ||
-            "This is the hero section for your company website."}
-        </h1>
-        <button onClick={handleToggleMessage}>Toggle Message</button>
+    <section
+      className="hero-section d-flex justify-content-center align-items-center text-white"
+      data-aos="fade-up"
+    >
+      <div className="text-center">
+        <h1 className="display-3 fw-bold">Craft Cocktails, Tailored for You</h1>
+        <p className="lead">Bringing the Bar Experience to Your Event</p>
+        <button className="btn btn-lg btn-primary mt-4">Book Now</button>
       </div>
     </section>
   );

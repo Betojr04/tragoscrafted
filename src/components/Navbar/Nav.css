@@ -4,7 +4,7 @@
     align-items: center;
     padding: 20px;
     background-color: transparent;
-    color: black;
+    color: white;
     position: absolute;
     width: 100%;
     z-index: 1;
@@ -30,7 +30,7 @@
 .nav-links div {
     padding: 10px 20px;
     cursor: pointer;
-    color: black;
+    color: white;
     text-decoration: none;
 }
 
