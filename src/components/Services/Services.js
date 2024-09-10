@@ -22,7 +22,7 @@ const services = [
 
 export const Services = () => {
   return (
-    <section className="services-section container text-center">
+    <section id="services" className="services-section container text-center">
       <h2 className="section-title" data-aos="fade-up">
         Our Services
       </h2>

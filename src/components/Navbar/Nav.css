@@ -1,3 +1,4 @@
+/* Navbar Container */
 .nav-container {
     display: flex;
     justify-content: space-between;
@@ -5,46 +6,83 @@
     padding: 20px;
     background-color: transparent;
     color: white;
-    position: absolute;
+    position: fixed;
+    /* Sticks the navbar to the top */
     width: 100%;
-    z-index: 1;
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+    /* Smooth transition on scroll */
 }
 
+/* Background change on scroll */
+.nav-container.scrolled {
+    background-color: rgba(44, 62, 80, 0.9);
+    /* Darker background on scroll */
+}
+
+/* Logo Styling */
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* Mobile Menu Icon */
 .menu-icon {
     display: block;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     cursor: pointer;
 }
 
+/* Nav Links */
 .nav-links {
     display: none;
     flex-direction: column;
     position: absolute;
-    background-color: white;
+    background-color: #34495e;
     width: 100%;
     top: 60px;
     left: 0;
     padding: 20px 0;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+    z-index: 999;
 }
 
+/* Nav Link Item */
 .nav-links div {
-    padding: 10px 20px;
-    cursor: pointer;
+    padding: 10px 0;
+}
+
+.nav-links div a {
     color: white;
     text-decoration: none;
+    font-size: 1.2rem;
 }
 
+/* Highlight active nav item */
+.nav-links div.active a {
+    color: #FFD700;
+    font-weight: bold;
+}
+
+/* Hover effect */
 .nav-links div:hover {
-    background-color: lightpink;
+    background-color: #FFD700;
+    transition: background-color 0.3s ease;
 }
 
+/* Open the mobile nav */
 .nav-links.open {
     display: flex;
+    transform: translateY(0);
+    /* Smooth opening */
 }
 
+/* Desktop View Styling */
 @media (min-width: 768px) {
     .menu-icon {
         display: none;
+        /* Hide mobile menu icon on desktop */
     }
 
     .nav-links {
@@ -54,9 +92,24 @@
         display: flex;
         justify-content: flex-end;
         padding: 0;
+        transform: none;
     }
 
     .nav-links div {
-        padding: 0 10px;
+        padding: 0 15px;
+    }
+
+    .nav-links div a {
+        font-size: 1rem;
+    }
+
+    .nav-links div.active a {
+        color: #FFD700;
+        font-weight: bold;
+    }
+
+    .nav-links div:hover {
+        background-color: transparent;
+        color: #FFD700;
     }
 }

@@ -1,7 +1,7 @@
 /* Contact Section Styles */
 .contact-section {
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -13,7 +13,6 @@
 .contact-container {
     display: flex;
     width: 80%;
-    height: 80vh;
     max-width: 1200px;
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
     border-radius: 15px;
@@ -31,15 +30,16 @@
 }
 
 .contact-title {
-    font-size: 2.5rem;
+    font-size: 3rem;
     margin-bottom: 20px;
     color: #FFD700;
 }
 
 .contact-subtitle {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     margin-bottom: 40px;
     color: #bdc3c7;
+    line-height: 1.6;
 }
 
 .contact-form .form-group {
@@ -86,10 +86,15 @@
     background-image: url('https://images.unsplash.com/photo-1522252234503-e356532cafd5?fit=crop&w=800&q=80');
     background-size: cover;
     background-position: center;
-    filter: grayscale(50%) contrast(1.2);
+    filter: grayscale(60%) contrast(1.4);
+    transition: transform 0.3s ease;
 }
 
-/* Modern Button */
+.contact-image-container:hover {
+    transform: scale(1.05);
+}
+
+/* Button Enhancements */
 .btn {
     padding: 15px 30px;
     font-size: 1.2rem;
@@ -99,12 +104,13 @@
     color: #2c3e50;
     cursor: pointer;
     transition: all 0.3s ease;
-    box-shadow: 0 5px 15px rgba(255, 215, 0, 0.2);
+    box-shadow: 0 5px 15px rgba(255, 215, 0, 0.4);
 }
 
 .btn:hover {
     background-color: #FFC107;
-    box-shadow: 0 8px 20px rgba(255, 215, 0, 0.4);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(255, 215, 0, 0.6);
 }
 
 /* Responsive Design */
@@ -115,7 +121,7 @@
     }
 
     .contact-image-container {
-        height: 200px;
+        height: 250px;
     }
 
     .contact-form-container {

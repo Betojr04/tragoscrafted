@@ -3,7 +3,7 @@ import "./Contact.css";
 
 export const Contact = () => {
   return (
-    <section className="contact-section">
+    <section id="contact" className="contact-section">
       <div className="contact-container">
         {/* Form Section */}
         <div className="contact-form-container">
@@ -57,7 +57,7 @@ export const Contact = () => {
 
         {/* Background Section */}
         <div className="contact-image-container" data-aos="fade-left">
-          {/* Add a subtle pattern or background image */}
+          {/* Background image/pattern */}
         </div>
       </div>
     </section>

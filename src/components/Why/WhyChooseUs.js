@@ -1,25 +1,35 @@
 import React from "react";
+import { FaCocktail, FaConciergeBell, FaGlassCheers } from "react-icons/fa";
 import "./WhyChooseUs.css";
 
 export const WhyChooseUs = () => {
   return (
-    <section className="why-choose-us-section">
+    <section id="whyus" className="why-choose-us-section">
       <div className="container">
         <div className="why-choose-us-content">
           <div className="why-choose-us-text" data-aos="fade-right">
             <h2 className="section-title">Why Choose Us?</h2>
             <ul className="why-list">
               <li>
-                <strong>Expert Mixology:</strong> Over a decade of experience
-                crafting high-quality cocktails.
+                <FaCocktail className="why-icon" />
+                <div>
+                  <strong>Quality Cocktails:</strong> Experience in creating a
+                  variety of craft cocktails to suit any event.
+                </div>
               </li>
               <li>
-                <strong>Seamless Service:</strong> Professional and efficient,
-                from setup to cleanup.
+                <FaConciergeBell className="why-icon" />
+                <div>
+                  <strong>Seamless Service:</strong> Professional and efficient
+                  from setup to cleanup, ensuring a smooth experience.
+                </div>
               </li>
               <li>
-                <strong>Personalized Experience:</strong> Custom drink menus
-                tailored to your event.
+                <FaGlassCheers className="why-icon" />
+                <div>
+                  <strong>Personalized Experience:</strong> Custom drink menus
+                  tailored specifically to your event and guest preferences.
+                </div>
               </li>
             </ul>
           </div>

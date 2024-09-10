@@ -1,4 +1,4 @@
-/* Hero.css */
+/* Hero Section Styles */
 .hero-section {
     height: 100vh;
     background-image: url('https://images.unsplash.com/photo-1695606452975-153d9554ce8b?w=500&auto=format&fit=crop&q=60');
@@ -6,6 +6,7 @@
     background-position: center;
     background-attachment: fixed;
     position: relative;
+    overflow: hidden;
 }
 
 .hero-section::before {
@@ -16,10 +17,63 @@
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
-    /* Dark overlay for contrast */
+    /* Dark overlay */
     z-index: 1;
 }
 
-.text-center {
+/* Hero Content */
+.hero-content {
     z-index: 2;
+    position: relative;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.hero-title {
+    font-size: 4rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: 20px;
+    line-height: 1.2;
+    animation: fadeInUp 1.5s ease-in-out;
+}
+
+.hero-subtitle {
+    font-size: 1.5rem;
+    margin-bottom: 40px;
+    animation: fadeInUp 1.8s ease-in-out;
+}
+
+/* Button Enhancements */
+.btn-primary {
+    padding: 15px 40px;
+    font-size: 1.2rem;
+    background-color: #FFD700;
+    border: none;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(255, 215, 0, 0.4);
+}
+
+.btn-primary:hover {
+    background-color: #FFC107;
+    transform: translateY(-3px);
+    /* Subtle lift on hover */
+    box-shadow: 0 8px 20px rgba(255, 215, 0, 0.6);
+}
+
+/* Animations */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
