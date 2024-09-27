@@ -58,7 +58,7 @@ export const Contact = () => {
               <input
                 type="text"
                 className="form-control"
-                name="user_name"
+                name="name"
                 placeholder=" "
                 required
               />
@@ -68,7 +68,7 @@ export const Contact = () => {
               <input
                 type="email"
                 className="form-control"
-                name="user_email"
+                name="email"
                 placeholder=" "
                 required
               />
@@ -79,7 +79,7 @@ export const Contact = () => {
               <input
                 type="tel"
                 className="form-control"
-                name="user_phone"
+                name="phone_number"
                 placeholder=" "
                 required
               />
