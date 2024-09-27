@@ -19,7 +19,6 @@
     overflow: hidden;
 }
 
-/* Left: Form Container */
 .contact-form-container {
     flex: 1;
     background-color: #34495e;
@@ -94,7 +93,6 @@
     transform: scale(1.05);
 }
 
-/* Button Enhancements */
 .btn {
     padding: 15px 30px;
     font-size: 1.2rem;
@@ -126,5 +124,66 @@
 
     .contact-form-container {
         padding: 40px 20px;
+    }
+}
+
+
+/* Modal Styles */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 1000;
+}
+
+.modal-content {
+    background-color: #34495e;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    max-width: 90%;
+    width: 400px;
+}
+
+.modal-title {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: #FFD700;
+}
+
+.modal-message {
+    font-size: 1.2rem;
+    color: #ecf0f1;
+    margin-bottom: 25px;
+}
+
+/* Modal Button Styles */
+.modal .btn {
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    background-color: #FFD700;
+    color: #2c3e50;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.modal .btn:hover {
+    background-color: #FFC107;
+}
+
+/* Responsive Modal */
+@media (max-width: 768px) {
+    .modal-content {
+        padding: 20px;
+        width: 90%;
     }
 }

@@ -1,18 +1,15 @@
-/* Client Expectations Section */
 .client-expectations-section {
     background-color: #f7f8fa;
     padding: 100px 20px;
 
 }
 
-/* Timeline for Desktop */
 .timeline {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
 
-/* Timeline Step Styling */
 .timeline-step {
     width: 23%;
     background-color: #ffffff;
@@ -25,13 +22,11 @@
     transition: all 0.3s ease;
 }
 
-/* Hover Effect on Steps (Desktop) */
 .timeline-step:hover {
     transform: translateY(-5px);
     box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.2);
 }
 
-/* Horizontal Line Connector for Desktop */
 .timeline-step:not(:last-child)::after {
     content: '';
     position: absolute;
@@ -40,11 +35,9 @@
     width: 50px;
     height: 4px;
     background-color: #FFD700;
-    /* Burgundy accent */
     transform: translateY(-50%);
 }
 
-/* Title and Text Styling */
 .timeline-step h5 {
     font-size: 1.7rem;
     margin-bottom: 15px;
@@ -68,14 +61,12 @@
         margin-bottom: 20px;
     }
 
-    /* Remove horizontal line connector on mobile */
     .timeline-step:not(:last-child)::after {
         content: none;
     }
 
     .timeline-step h5 {
         font-size: 1.5rem;
-        /* Adjust for mobile */
     }
 
     .timeline-step p {

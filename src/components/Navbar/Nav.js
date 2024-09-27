@@ -18,11 +18,10 @@ export const Nav = () => {
     };
   }, []);
 
-  // IntersectionObserver to track section visibility
   useEffect(() => {
     const sections = document.querySelectorAll("section");
     const options = {
-      threshold: 0.6 // 60% of section must be visible to trigger
+      threshold: 0.6
     };
 
     const observer = new IntersectionObserver((entries) => {

@@ -1,5 +1,6 @@
 import React from "react";
 import "./Hero.css";
+import { Link } from "react-router-dom";
 
 export const Hero = () => {
   return (
@@ -12,7 +13,9 @@ export const Hero = () => {
         <p className="hero-subtitle">
           Bringing the Bar Experience to Your Event
         </p>
-        <button className="btn btn-lg btn-primary mt-4">Book Now</button>
+        <a href="#contact">
+          <button className="btn btn-lg btn-primary mt-4">Book Now</button>
+        </a>
       </div>
     </section>
   );
